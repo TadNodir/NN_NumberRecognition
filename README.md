@@ -26,14 +26,14 @@ The weighted connections between the perceptrons of the input layer and the hidd
 
 ## Implementation
 
-The network is implemented as a Python class named `FeedForwardNetwork`. It provides the following member functions:
+The network is implemented as a Python class named `NeuralNetwork`. It provides the following member functions:
 
 - `__init__(self)`: Initializes all necessary member variables.
 - `sigmoid(self, x)`: Implements the sigmoid activation function.
 - `sigmoid_derivative(self, x)`: Calculates the derivative of the sigmoid function.
 - `think(self, inputs)`: Performs one "thought-step" of the network for the given inputs.
 - `train(self, inputs, targets, iterations)`: The training loop that executes "iterations" times to train the network. It includes backpropagation and weight adjustments.
-- `__name__ == "__main__"`: The main function that creates an instance of the `FeedForwardNetwork` class, trains it using the MNIST training dataset, and tests it with a test dataset. It returns a performance rating indicating the percentage of correctly recognized images.
+- `__name__ == "__main__"`: The main function that creates an instance of the `NeuralNetwork` class, trains it using the MNIST training dataset, and tests it with a test dataset. It returns a performance rating indicating the percentage of correctly recognized images.
 - Create a dataset of your own handwriting and let the network recognize it. Measure the recognition rate.
 
 ## Dependencies
@@ -47,11 +47,11 @@ Please make sure to install the required dependencies before running the code.
 
 ## Usage
 
-To use the `FeedForwardNetwork` class, follow these steps:
+To use the `NeuralNetwork` class, follow these steps:
 
 1. Download the MNIST dataset from the provided links and place the CSV files in the same directory as the code files.
-2. Import the `FeedForwardNetwork` class into your Python program.
-3. Create an instance of the `FeedForwardNetwork` class.
+2. Import the `NeuralNetwork` class into your Python program.
+3. Create an instance of the `NeuralNetwork` class.
 4. Train the network using the `train` method by providing the MNIST training dataset and the desired number of iterations.
 5. Test the network's performance using the `think` method and the MNIST test dataset.
 6. Optionally, create a dataset of your own handwriting and use the `think` method to recognize the handwritten numbers.
