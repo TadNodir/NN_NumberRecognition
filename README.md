@@ -6,10 +6,11 @@ This repository contains the implementation of a feed-forward neural network for
 
 The MNIST dataset is used for training and testing the network. It contains thousands of 28x28 grayscale images of handwritten numbers. You can download the dataset from the following links:
 
-- [mnist_train_100.csv](link-to-mnist_train_100.csv): Reduced training dataset (recommended for development)
-- [mnist_train_full.csv](link-to-mnist_train_full.csv): Full training dataset
-- [mnist_test_10.csv](link-to-mnist_test_10.csv): Reduced test dataset
-- [mnist_test_full.csv](link-to-mnist_test_full.csv): Full test dataset
+- `mnist_train_100.csv`: Reduced training dataset (recommended for development)
+- `mnist_train_5000.csv`: Reduced training dataset
+- `mnist_test_10.csv`: Reduced test dataset
+- `mnist_test_200.csv`: Reduced test dataset
+- `mnist_test_full.csv`: Full test dataset
 
 The dataset is stored in a CSV format, where each row represents an image. The first column contains the true value or label of the image, followed by the grayscale pixel values.
 
